@@ -1,0 +1,76 @@
+<div id="body">
+    <style>
+        #body{
+            background-color: rgb(216, 237, 252);
+        }
+    </style>
+<style>
+    
+
+    #animate {
+        position: absolute;
+        background-image: url(photofirst.jpg);
+        background-repeat: no-repeat;
+        background-size: 200px;
+        width: 200px;
+        height: 200px;
+
+
+    }
+
+    #container {
+        position: relative;
+        width: 1500px;
+        height: 515px;
+        background-color: rgb(158, 204, 248);
+        
+    }
+</style>
+<div id="text">
+    <h1>Hello, my name is Amina</h1>
+    <h3> I am 16 years old. I am a 2nd year computer graphic designer at Ala-Too College.</h3>
+    <h3>I m trying to upgrade my skills in JS</h3>
+    <h4>Now I know this program</h4>
+    <ul>
+        <li>Adobe Illustrator</li>
+        <li>Adobe After Effects</li>
+        <li>Adobe Photoshop</li>
+        
+    </ul>
+    <h2>THIS IS MY PHOTO (just click)</h2></div>
+    <style>
+        #text {
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(82, 116, 211);
+        }
+    </style>
+
+
+
+
+<div id="container">
+    <div id="animate">
+<p>Meee</p>
+    </div>
+</div>
+<button onclick="myMove()">click me</button>
+
+<script>
+   
+    function myMove() {
+        var elem = document.getElementById("animate");
+        var pos = 0;
+        var id = setInterval(frame, 5);
+
+        function frame() {
+            if (pos == 350) {
+                clearInterval(id); } 
+           else {
+                pos++;
+                elem.style.top = pos + "px";
+                elem.style.left = pos + "px";
+            }
+        }
+    }
+</script> 
+</div>
